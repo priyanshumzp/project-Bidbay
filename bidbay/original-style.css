@@ -1,0 +1,101 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation - Fixed Layout */
+#navbar {
+    background: linear-gradient(90deg, rgba(122,73,235,1) 0%, rgba(169,6,233,1) 78%);
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+#logo {
+    float: left;
+}
+
+#logo img {
+    height: 76px;
+    margin: 4px 23px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Menu - Fixed Layout */
+.menu {
+    margin: 50px auto;
+    width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu > li {
+    float: left;
+    background: #000;
+    position: relative;
+    transform: skewX(25deg);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+    padding: 1em 2em;
+    transform: skewX(-25deg);
+}
+
+/* Buttons - Fixed Layout */
+.button {
+    background-color: #af7bd4;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    height: 90px;
+    margin: 230px 0 0 50px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#mid {
+    background: linear-gradient(0deg, rgba(42,119,184,1) 6%, rgba(114,59,177,1) 82%);
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+/* Footer - Fixed Layout */
+.footer-content {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer-content-column {
+    /* Add your styles here or remove this block if not needed */
+}

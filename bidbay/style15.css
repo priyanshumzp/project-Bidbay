@@ -1,0 +1,200 @@
+/* Reset styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bidding-room {
+    text-align: center;
+    width: 900px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 9px;
+    background-color: #eaffcc;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #add8e6;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    
+  }
+  
+  .user-label {
+    background-color: #d4ff89;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #000;
+  }
+  
+  .user-1 {
+    align-self: flex-start;
+  }
+  
+  .user-2 {
+    align-self: flex-start;
+  }
+  
+  .bidding-area {
+    background-color: #d3d3d3;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 300px;
+    /* height: 150px; */
+    border-radius: 8px;
+    
+  }
+  
+  .bid-display {
+    width: 60px;
+    height: 60px;
+    background-color: #5f79e3;
+    border-radius: 50%;
+  }
+  
+  .bid-button {
+    background-color: #fff;
+    border: 2px solid red;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 240px; */
+  }
+  
+  .card {
+    background-color: #ffc0cb;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #000;
+  }
+  
+  .winner {
+    background-color: #ff75a3;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .metamask {
+    text-align: center;
+  }
+  
+  .metamask img {
+    width: 50px;
+  }
+  
+  .metamask div {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+
+  /* Payment Modal Styles */
+.payment-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal-content label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-content button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-content button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Card Container */
+  .card-container {
+    cursor: pointer;
+  }
+
+  #connectWalletButton {
+    padding: 10px 20px;
+    background-color: #f6851b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #connectWalletButton:hover {
+    background-color: #e77b1a;
+  }
+  
+  #walletAddress {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

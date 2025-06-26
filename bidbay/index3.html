@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auction Search</title>
+  <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Auction Search</h1>
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="search-bar" 
+        placeholder="Search auctions..."
+      />
+      <button id="search-button" onclick="filterAuctions()">Submit</button>
+    </div>
+    <div id="auction-list">
+      <!-- Auction items will be displayed here -->
+      <div class="auction-item" data-name="Gold Necklace">Gold Necklace - $500</div>
+      <div class="auction-item" data-name="Vintage Car">Vintage Car - $20,000</div>
+      <div class="auction-item" data-name="Smartphone">Smartphone - $800</div>
+      <div class="auction-item" data-name="Designer Handbag">Designer Handbag - $1,200</div>
+      <div class="auction-item" data-name="Antique Vase">Antique Vase - $3,000</div>
+    </div>
+  </div>
+  <script src="searchscript.js"></script>
+</body>
+</html>
+

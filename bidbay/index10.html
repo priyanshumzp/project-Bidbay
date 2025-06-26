@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bidding Room</title>
+  <link rel="stylesheet" href="style15.css">
+</head>
+
+<body>
+  <div class="bidding-room">
+    <div class="header">BIDDING ROOM</div>
+    <div class="main-content">
+      <div class="user-label user-1">USER - 1</div>
+      <div class="bidding-area">
+        <button class="bid-button" id="user1-bid">▲</button>
+        <div class="bid-display"></div>
+        <button class="bid-button" id="user2-bid">▲</button>
+      </div>
+      <div class="user-label user-2">USER - 2</div>
+    </div>
+    <div class="footer">
+      <div class="card">
+        <div class="card" id="card">
+          <div class="card-container">
+            <div class="card-icon"></div>
+            <div class="card-message">Card</div>
+          </div>
+        </div>
+
+        <!-- Payment Modal -->
+        <div class="payment-modal" id="paymentModal">
+          <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h2>Enter Payment Details</h2>
+            <form id="paymentForm">
+              <label for="cardNumber">Card Number:</label>
+              <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+
+              <label for="expiryDate">Expiry Date:</label>
+              <input type="text" id="expiryDate" placeholder="MM/YY" required>
+
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" placeholder="123" required>
+
+              <button type="submit">Submit Payment</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <div class="winner">WINNER</div>
+      <div class="metamask">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" alt="MetaMask" />
+        <div></div>
+        <button id="connectWalletButton">Connect MetaMask</button>
+        <!-- <div id="walletAddress">Not connected</div> -->
+      </div>
+    </div>
+  </div>
+  <script src="style.js"></script>
+</body>
+
+</html>

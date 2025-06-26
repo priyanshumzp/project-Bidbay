@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bidder Enrollment</title>
+  <link rel="stylesheet" href="bidder.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bidder Enrollment</h1>
+      <p>Follow these steps to enroll as a bidder on our platform.</p>
+    </header>
+
+    <div id="steps-container">
+      <div class="step active" id="step-1">
+        <h2>Step 1: Account Creation</h2>
+        <p>Enter your email and password to create an account.</p>
+        <input type="email" placeholder="Enter your email" id="email" required>
+        <input type="password" placeholder="Enter your password" id="password" required>
+        <button onclick="nextStep(1)">Next</button>
+      </div>
+
+      <div class="step" id="step-2">
+        <h2>Step 2: Email Verification</h2>
+        <p>A verification link has been sent to your email. Please verify to continue.</p>
+        <button onclick="nextStep(2)">Next</button>
+      </div>
+
+      <div class="step" id="step-3">
+        <h2>Step 3: Personal Details</h2>
+        <p>Provide your personal information for identity verification.</p>
+        <input type="text" placeholder="Full Name" id="name" required>
+        <input type="text" placeholder="Address" id="address" required>
+        <input type="file" id="id-proof" required>
+        <label for="id-proof">Upload ID Proof</label>
+        <button onclick="nextStep(3)">Next</button>
+      </div>
+
+      <div class="step" id="step-4">
+        <h2>Step 4: Payment Method Setup</h2>
+        <p>Link a payment method to start bidding.</p>
+        <input type="text" placeholder="Card Number" id="card-number" required>
+        <input type="text" placeholder="Expiry Date (MM/YY)" id="expiry-date" required>
+        <input type="text" placeholder="CVV" id="cvv" required>
+        <button onclick="nextStep(4)">Next</button>
+      </div>
+
+      <div class="step" id="step-5">
+        <h2>Step 5: Agree to Terms</h2>
+        <p>Read and accept the terms and conditions of the platform.</p>
+        <textarea readonly>
+1. Follow all auction rules.
+2. No fraudulent activities.
+3. Payments must be completed promptly.
+        </textarea>
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        <button onclick="nextStep(5)">Next</button>
+      </div>
+
+      <div class="step" id="step-6">
+        <h2>Step 6: Registration Fee</h2>
+        <p>Pay the refundable registration fee to activate your account.</p>
+        <input type="text" placeholder="Enter Amount" id="amount" value="$100" disabled>
+        <button onclick="nextStep(6)">Pay and Continue</button>
+      </div>
+
+      <div class="step" id="step-7">
+        <h2>Step 7: Account Approval</h2>
+        <p>Your account is under review. Once approved, you will receive an email confirmation.</p>
+        <button onclick="nextStep(7)">Next</button>
+      </div>
+
+      <div class="step" id="step-8">
+        <h2>Step 8: Dashboard Access</h2>
+        <p>Your account is now active! Click the button below to access your bidder dashboard.</p>
+        <button onclick="dashboardAccess()">Go to Dashboard</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Auction Platform. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="bidder.js"></script>
+</body>
+</html>
